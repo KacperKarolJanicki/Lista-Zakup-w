@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -6,11 +8,11 @@ import 'My_List_Output.dart';
 import 'My_Price_Input.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyShoppingListApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyShoppingListApp extends StatelessWidget {
+  const MyShoppingListApp({super.key});
   Widget build(BuildContext context) {
     return MaterialApp(
       home: MainPage(),
@@ -41,113 +43,112 @@ class _MainPage extends State<MainPage> {
             ListView(
               children:[
                 //Article 1
-                SizedBox(height:30),
-                TextField(
-                  decoration:
-                  InputDecoration(
-                      label: Text('Artykuł 1',
-                        style: TextStyle(fontSize: 20),),
-                  icon: Icon(Icons.add_shopping_cart)),
+
+                Text('Artykuł 1', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                 final prefs = await SharedPreferences.getInstance();
                 prefs.setString('my_art_1', art);
           },
           ),
+
                 //Article 2
-                SizedBox(height:30),
-                TextField(
-                    decoration: InputDecoration(
-                        label: Text('Artykuł 2', style: TextStyle(fontSize: 20)),
-                        icon: Icon(Icons.add_shopping_cart)),
+                SizedBox(height: 10),
+                Text('Artykuł 2', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                     onChanged: (String art) async {
                 final prefs = await SharedPreferences.getInstance();
                 prefs.setString('my_art_2', art);
               },
                 ),
+
                 //Article 3
-                SizedBox(height:30),
-                TextField(
-                    decoration: InputDecoration(
-                        label: Text('Artykuł 3', style: TextStyle(fontSize: 20)),
-                        icon: Icon(Icons.add_shopping_cart)),
+                SizedBox(height: 10),
+                Text('Artykuł 3', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                     onChanged: (String art) async {
                 final prefs = await SharedPreferences.getInstance();
                 prefs.setString('my_art_3', art);},
                 ),
                 //Article 4
-                SizedBox(height:30),
-                TextField(
-                  decoration:
-                  InputDecoration(
-                      label: Text('Artykuł 4',
-                        style: TextStyle(fontSize: 20),),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 4', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_4', art);
                   },
                 ),
+
                 //Article 5
-                SizedBox(height:30),
-                TextField(
-                  decoration: InputDecoration(
-                      label: Text('Artykuł 5', style: TextStyle(fontSize: 20)),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 5', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_5', art);
                   },
                 ),
+
                 //Article 6
-                SizedBox(height:30),
-                TextField(
-                  decoration: InputDecoration(
-                      label: Text('Artykuł 6', style: TextStyle(fontSize: 20)),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 6', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_6', art);},
                 ),
+
                 //Article 7
-                SizedBox(height:30),
-                TextField(
-                  decoration:
-                  InputDecoration(
-                      label: Text('Artykuł 7',
-                        style: TextStyle(fontSize: 20),),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 7', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_7', art);
                   },
                 ),
+
                 //Article 8
-                SizedBox(height:30),
-                TextField(
-                  decoration: InputDecoration(
-                      label: Text('Artykuł 8', style: TextStyle(fontSize: 20)),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 8', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_8', art);
                   },
                 ),
+
                 //Article 9
-                SizedBox(height:30),
-                TextField(
-                  decoration: InputDecoration(
-                      label: Text('Artykuł 9', style: TextStyle(fontSize: 20)),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 9', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_9', art);},
                 ),
+
                 //Article 10
-                SizedBox(height:30),
-                TextField(
-                  decoration: InputDecoration(
-                      label: Text('Artykuł 10', style: TextStyle(fontSize: 20)),
-                      icon: Icon(Icons.add_shopping_cart)),
+
+                SizedBox(height: 10),
+                Text('Artykuł 10', textAlign: TextAlign.center, style: TextStyle(fontSize: 20)),
+                SizedBox(height: 15),
+                CupertinoTextField(
                   onChanged: (String art) async {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_10', art);},
@@ -172,11 +173,10 @@ class _MainPage extends State<MainPage> {
                             ListView(
                           children:[
                             //Article_1
-                            TextField(
+
+                            Text('1: $Article_1 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('1: $Article_1 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -185,9 +185,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_1 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -195,14 +196,14 @@ class _MainPage extends State<MainPage> {
                                   stock_1 = stock_a;
                                 } else stock_1 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_2
-                            TextField(
+
+                            Text('2: $Article_2 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('2: $Article_2 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -211,9 +212,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_2 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -221,14 +223,14 @@ class _MainPage extends State<MainPage> {
                                   stock_2 = stock_a;
                                 } else stock_2 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_3
-                            TextField(
+
+                            Text('3: $Article_3 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('3: $Article_3 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -237,9 +239,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_3 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -247,14 +250,13 @@ class _MainPage extends State<MainPage> {
                                   stock_3 = stock_a;
                                 } else stock_3 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_4
-                            TextField(
+                            Text('4: $Article_4 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('4: $Article_4 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -263,9 +265,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_4 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -273,14 +276,14 @@ class _MainPage extends State<MainPage> {
                                   stock_4 = stock_a;
                                 } else stock_4 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_5
-                            TextField(
+
+                            Text('5: $Article_5 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('5: $Article_5 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -289,9 +292,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_5 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -299,14 +303,14 @@ class _MainPage extends State<MainPage> {
                                   stock_5 = stock_a;
                                 } else stock_5 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_6
-                            TextField(
+
+                            Text('6: $Article_6 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('6: $Article_6 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -315,9 +319,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_6 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -325,14 +330,14 @@ class _MainPage extends State<MainPage> {
                                   stock_6 = stock_a;
                                 } else stock_6 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_7
-                            TextField(
+
+                            Text('7: $Article_7 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('7: $Article_7 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -341,9 +346,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_7 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -351,14 +357,14 @@ class _MainPage extends State<MainPage> {
                                   stock_7 = stock_a;
                                 } else stock_7 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_8
-                            TextField(
+
+                            Text('8: $Article_8 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('8: $Article_8 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -367,9 +373,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_8 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -377,14 +384,14 @@ class _MainPage extends State<MainPage> {
                                   stock_8 = stock_a;
                                 } else stock_8 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_9
-                            TextField(
+
+                            Text('9: $Article_9 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('9: $Article_9 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -393,9 +400,10 @@ class _MainPage extends State<MainPage> {
                                 } else price_9 = 0;
                               },
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -403,14 +411,13 @@ class _MainPage extends State<MainPage> {
                                   stock_9 = stock_a;
                                 } else stock_9 = 1;
                               },
-                              textInputAction: TextInputAction.next,
                             ),
+                            SizedBox(height: 50),
+
                             //Article_10
-                            TextField(
+                            Text('10: $Article_10 | Cena:', style: TextStyle(fontSize: 18), ),
+                            CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
-                              decoration: InputDecoration(
-                                  label: Text('10: $Article_10 - podaj cenę:'),
-                                  icon:Icon(Icons.price_check)),
                               onChanged: (input_1){
                                 if (input_1 != null && input_1.isNotEmpty) {
                                   var price_a = double.parse(input_1);
@@ -418,10 +425,12 @@ class _MainPage extends State<MainPage> {
                                   price_10 = price_a;
                                 } else price_10 = 0;
                               },
+
                             ),
-                            TextField(
+                            SizedBox(height: 10),
+                            Text('Ilość:', style: TextStyle(fontSize: 18)),
+                            CupertinoTextField(
                               keyboardType: TextInputType.number,
-                              decoration: InputDecoration(label: Text('Ilość')),
                               onChanged: (input_2){
                                 if (input_2 != null && input_2.isNotEmpty) {
                                   var stock_a = int.parse(input_2);
@@ -461,7 +470,6 @@ class _MainPage extends State<MainPage> {
                                         )
                                     );
                                   });
-                              Reset_Values();
                             }, child: Text('Cena zakupów'))
                       ]),
                       ),],

@@ -57,8 +57,8 @@
 {
 "filename" : "120.png",
 "idiom" : "iphone",
-"scale" : "2x",
-"size" : "60x60"
+"scale" : "1x",
+"size" : "120x120"
 },
 {
 "filename" : "180.png",
@@ -84,8 +84,8 @@
 {
 "filename" : "152.png",
 "idiom" : "ipad",
-"scale" : "2x",
-"size" : "76x76"
+"scale" : "1x",
+"size" : "152x152"
 },
 {
 "filename" : "167.png",
