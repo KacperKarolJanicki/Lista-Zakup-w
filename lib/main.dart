@@ -172,6 +172,7 @@ class _MainPage extends State<MainPage> {
                             child:
                             ListView(
                           children:[
+
                             //Article_1
 
                             Text('1: $Article_1 | Cena:', style: TextStyle(fontSize: 18), ),
@@ -254,6 +255,7 @@ class _MainPage extends State<MainPage> {
                             SizedBox(height: 50),
 
                             //Article_4
+
                             Text('4: $Article_4 | Cena:', style: TextStyle(fontSize: 18), ),
                             CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
@@ -415,6 +417,7 @@ class _MainPage extends State<MainPage> {
                             SizedBox(height: 50),
 
                             //Article_10
+
                             Text('10: $Article_10 | Cena:', style: TextStyle(fontSize: 18), ),
                             CupertinoTextField(
                               keyboardType: TextInputType.numberWithOptions(signed: true),
