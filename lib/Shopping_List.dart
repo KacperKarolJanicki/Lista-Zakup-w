@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lista_zakopow/My_List_Output.dart';
 import 'package:lista_zakopow/My_Price_Input.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Shopping_List extends StatefulWidget {
   _Shopping_List createState() => _Shopping_List();
@@ -34,7 +35,7 @@ Widget build(BuildContext context) {
 
 return Scaffold(
 appBar: AppBar(
-title: Text('Lista twoich zakupów')
+title: Text('Lista Twoich zakupów')
 ),
 body:
 Column(
@@ -72,7 +73,14 @@ stock_1 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+SizedBox(height: 10),
+ElevatedButton(onPressed: () {
+  setState(() {
+    Article_1 ='';
+  });
+  delate_art1(Article_1);
+}, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_2
 
@@ -101,7 +109,14 @@ stock_2 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_2 ='';
+    });
+    delate_art2(Article_2);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_3
 
@@ -130,7 +145,14 @@ stock_3 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_3 ='';
+    });
+    delate_art3(Article_3);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_4
 
@@ -159,7 +181,14 @@ stock_4 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_4 ='';
+    });
+    delate_art4(Article_4);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_5
 
@@ -188,7 +217,14 @@ stock_5 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_5 ='';
+    });
+    delate_art5(Article_5);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_6
 
@@ -217,7 +253,14 @@ stock_6 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_6 ='';
+    });
+    delate_art6(Article_6);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_7
 
@@ -246,7 +289,14 @@ stock_7 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_7 ='';
+    });
+    delate_art7(Article_7);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_8
 
@@ -275,7 +325,14 @@ stock_8 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_8 ='';
+    });
+    delate_art8(Article_8);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_9
 
@@ -304,7 +361,14 @@ stock_9 = stock_a;
 result(input_1);
 },
 ),
-SizedBox(height: 50),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_9 ='';
+    });
+    delate_art9(Article_9);
+  }, child: Text('Wykreśl z listy')),
+SizedBox(height: 30),
 
 //Article_10
 
@@ -320,8 +384,7 @@ price_10 = price_a;
 result(input_1);
 },
 ),
-
-    SizedBox(height: 10),
+  SizedBox(height: 10),
 Text('Ilość:', style: TextStyle(fontSize: 18)),
 CupertinoTextField(
 keyboardType: TextInputType.number,
@@ -334,12 +397,16 @@ stock_10 = stock_a;
 result(input_1);
 },
 ),
+  SizedBox(height: 10),
+  ElevatedButton(onPressed: () {
+    setState(() {
+      Article_10 ='';
+    });
+    delate_art10(Article_10);
+  }, child: Text('Wykreśl z listy')),
+  SizedBox(height: 10),
   ])),
-  Expanded(
-      flex:1,
-      child:
-  Text('Koszt: $final_final_price zł', style: TextStyle(fontSize: 20), textAlign: TextAlign.center,)
-  )
+  Text('Koszt: $final_final_price zł', style: TextStyle(fontSize: 30), textAlign: TextAlign.center,)
   ]
 )
 );}}

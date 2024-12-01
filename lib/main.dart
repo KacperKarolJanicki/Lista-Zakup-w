@@ -36,6 +36,8 @@ class _MainPage extends State<MainPage> {
       ),
     ),
         body:
+    Column( children: [
+      Expanded(child:
             ListView(
               children:[
                 //Article 1
@@ -149,15 +151,18 @@ class _MainPage extends State<MainPage> {
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('my_art_10', art);},
                 ),
-
-                SizedBox(height: 20),
-
-                ElevatedButton(onPressed: (){
+                ])),
+                ElevatedButton(
+                    onPressed: (){
                   LoadArts();
                   reset_values();
                   Navigator.push(
                  context,
-                 MaterialPageRoute(builder: (context) => Shopping_List()));}, child: Text('Twoja lista'))
+                 MaterialPageRoute(builder: (context) => Shopping_List()));}, child: Text('Twoja lista', style: TextStyle(fontSize: 30),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white
+                )
+                )
     ]),
     );
   }

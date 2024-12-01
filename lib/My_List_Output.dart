@@ -104,3 +104,44 @@ void LoadArts() async {
     Article_10 = load10;
   }
 }
+
+void delate_art1(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_1', txt);
+}
+void delate_art2(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_2', txt);
+}
+void delate_art3(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_3', txt);
+}
+void delate_art4(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_4', txt);
+}
+void delate_art5(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_5', txt);
+}
+void delate_art6(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_6', txt);
+}
+void delate_art7(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_7', txt);
+}
+void delate_art8(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_8', txt);
+}
+void delate_art9(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_9', txt);
+}
+void delate_art10(String txt) async {
+  final prefs = await SharedPreferences.getInstance();
+  prefs.setString('my_art_10', txt);
+}
