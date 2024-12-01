@@ -154,9 +154,7 @@ class _MainPage extends State<MainPage> {
 
                 ElevatedButton(onPressed: (){
                   LoadArts();
-
-                  final_final_price = 0;
-
+                  reset_values();
                   Navigator.push(
                  context,
                  MaterialPageRoute(builder: (context) => Shopping_List()));}, child: Text('Twoja lista'))
