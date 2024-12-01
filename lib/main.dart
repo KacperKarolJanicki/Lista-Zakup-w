@@ -150,7 +150,7 @@ class _MainPage extends State<MainPage> {
                     prefs.setString('my_art_10', art);},
                 ),
 
-                SizedBox(height: 10),
+                SizedBox(height: 20),
 
                 ElevatedButton(onPressed: (){
                   LoadArts();

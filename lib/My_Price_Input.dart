@@ -36,6 +36,7 @@ double final_price_10 = 0;
 double final_final_price = 0;
 
 void reset_values() {
+
   price_1 = 0;
 price_2 = 0;
 price_3 = 0;
@@ -58,4 +59,7 @@ stock_7 = 1;
 stock_8 = 1;
 stock_9 = 1;
 stock_10 = 1;
+
+final_final_price=0;
+
 }
