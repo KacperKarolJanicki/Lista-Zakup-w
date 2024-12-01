@@ -280,6 +280,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_6 ='';
+      product_icon_6 = 'assets/images/shopping.png';
     });
     delate_art6(Article_6);
   }, child: Text('Wykreśl z listy')),
