@@ -48,7 +48,10 @@ children:[
 
 //Article_1
 
-Text('1: $Article_1 | Cena:', style: TextStyle(fontSize: 18), ),
+  Image.asset(product_icon_1, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_1 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
 CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
@@ -77,6 +80,7 @@ SizedBox(height: 10),
 ElevatedButton(onPressed: () {
   setState(() {
     Article_1 ='';
+    product_icon_1 = 'assets/images/shopping.png';
   });
   delate_art1(Article_1);
 }, child: Text('Wykreśl z listy')),
@@ -84,8 +88,11 @@ SizedBox(height: 30),
 
 //Article_2
 
-Text('2: $Article_2 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_2, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_2 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -113,6 +120,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_2 ='';
+      product_icon_2 = 'assets/images/shopping.png';
     });
     delate_art2(Article_2);
   }, child: Text('Wykreśl z listy')),
@@ -120,8 +128,11 @@ SizedBox(height: 30),
 
 //Article_3
 
-Text('3: $Article_3 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_3, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_3 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -149,6 +160,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_3 ='';
+      product_icon_3 = 'assets/images/shopping.png';
     });
     delate_art3(Article_3);
   }, child: Text('Wykreśl z listy')),
@@ -156,8 +168,11 @@ SizedBox(height: 30),
 
 //Article_4
 
-Text('4: $Article_4 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_4, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_4 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -185,6 +200,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_4 ='';
+      product_icon_4 = 'assets/images/shopping.png';
     });
     delate_art4(Article_4);
   }, child: Text('Wykreśl z listy')),
@@ -192,8 +208,11 @@ SizedBox(height: 30),
 
 //Article_5
 
-Text('5: $Article_5 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_5, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_5 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -221,6 +240,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_5 ='';
+      product_icon_5 = 'assets/images/shopping.png';
     });
     delate_art5(Article_5);
   }, child: Text('Wykreśl z listy')),
@@ -228,8 +248,11 @@ SizedBox(height: 30),
 
 //Article_6
 
-Text('6: $Article_6 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_6, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_6 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -264,8 +287,11 @@ SizedBox(height: 30),
 
 //Article_7
 
-Text('7: $Article_7 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_7, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_7 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -293,6 +319,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_7 ='';
+      product_icon_7 = 'assets/images/shopping.png';
     });
     delate_art7(Article_7);
   }, child: Text('Wykreśl z listy')),
@@ -300,8 +327,11 @@ SizedBox(height: 30),
 
 //Article_8
 
-Text('8: $Article_8 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_8, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_8 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -329,6 +359,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_8 ='';
+      product_icon_8 = 'assets/images/shopping.png';
     });
     delate_art8(Article_8);
   }, child: Text('Wykreśl z listy')),
@@ -336,8 +367,10 @@ SizedBox(height: 30),
 
 //Article_9
 
-Text('9: $Article_9 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_9, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_9 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -365,6 +398,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_9 ='';
+      product_icon_9 = 'assets/images/shopping.png';
     });
     delate_art9(Article_9);
   }, child: Text('Wykreśl z listy')),
@@ -372,8 +406,11 @@ SizedBox(height: 30),
 
 //Article_10
 
-Text('10: $Article_10 | Cena:', style: TextStyle(fontSize: 18), ),
-CupertinoTextField(
+  Image.asset(product_icon_10, height: 30),
+  SizedBox(width: 20),
+  Text('$Article_10 | Cena:', style: TextStyle(fontSize: 18), textAlign: TextAlign.center,),
+
+  CupertinoTextField(
 keyboardType: TextInputType.numberWithOptions(signed: true),
 onChanged: (input_1){
 if (input_1 != null && input_1.isNotEmpty) {
@@ -401,6 +438,7 @@ result(input_1);
   ElevatedButton(onPressed: () {
     setState(() {
       Article_10 ='';
+      product_icon_10 = 'assets/images/shopping.png';
     });
     delate_art10(Article_10);
   }, child: Text('Wykreśl z listy')),

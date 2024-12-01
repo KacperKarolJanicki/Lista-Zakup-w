@@ -36,30 +36,28 @@ double final_price_10 = 0;
 double final_final_price = 0;
 
 void reset_values() {
-
   price_1 = 0;
-price_2 = 0;
-price_3 = 0;
-price_4 = 0;
-price_5 = 0;
-price_6 = 0;
-price_7 = 0;
-price_8 = 0;
-price_9 = 0;
-price_10 = 0;
+  price_2 = 0;
+  price_3 = 0;
+  price_4 = 0;
+  price_5 = 0;
+  price_6 = 0;
+  price_7 = 0;
+  price_8 = 0;
+  price_9 = 0;
+  price_10 = 0;
 
 
-stock_1 = 1;
-stock_2 = 1;
-stock_3 = 1;
-stock_4 = 1;
-stock_5 = 1;
-stock_6 = 1;
-stock_7 = 1;
-stock_8 = 1;
-stock_9 = 1;
-stock_10 = 1;
+  stock_1 = 1;
+  stock_2 = 1;
+  stock_3 = 1;
+  stock_4 = 1;
+  stock_5 = 1;
+  stock_6 = 1;
+  stock_7 = 1;
+  stock_8 = 1;
+  stock_9 = 1;
+  stock_10 = 1;
 
-final_final_price=0;
-
+  final_final_price = 0;
 }
